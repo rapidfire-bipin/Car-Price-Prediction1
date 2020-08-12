@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Year's Old</h2>
+    <input class="area"  type="number" id="uiYear" class="integerLabel" name="Year" value="5">
+	
+	<h2>Mileage</h2>
+    <input class="area"  type="number" id="uiMileage" class="floatLabel" name="Mileage" value="19.26">
+	
+	<h2>Engine</h2>
+    <input class="area"  type="number" id="uiEngine" class="integerLabel" name="Engine" value="2500">
+	
+	<h2>Power</h2>
+    <input class="area"  type="number" id="uiPower" class="floatLabel" name="Power" value="192.6">
+	
+	<h2>Fuel Type</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-Fuel-1" name="uiFuel" value="Petrol"/>
+		<label for="radio-Fuel-1">Petrol</label>
+		<input type="radio" id="radio-Fuel-2" name="uiFuel" value="Diesel" checked/>
+		<label for="radio-Fuel-2">Diesel</label>
+
+	</div>
+	
+		<h2>Transmission Type</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-Trans-1" name="uiTrans" value="Manual"/>
+		<label for="radio-Trans-1">Manual</label>
+		<input type="radio" id="radio-Trans-2" name="uiTrans" value="Automatic" checked/>
+		<label for="radio-Trans-2">Automatic</label>
+
+	</div>
+	
+		<h2>Owner's Type</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-Owner-1" name="uiOwner" value="First"/>
+		<label for="radio-Owner-1">First</label>
+		<input type="radio" id="radio-Owner-2" name="uiOwner" value="Second" checked/>
+		<label for="radio-Owner-2">Second</label>
+		<input type="radio" id="radio-Owner-3" name="uiOwner" value="Third"/>
+		<label for="radio-Owner-3">Third</label>
+
+	</div>
+	</form>
+<form class="form">
+
+		<h2>Company</h2>
+	<div>
+  <select class="location" name="" id="uiCompany">
+    <option value="" disabled="disabled" selected="selected">Choose a Company Name</option>
+		<option>BMW</option>
+        <option>TATA</option>
+  </select>
+</div>
+
+		<h2>Model</h2>
+	<div>
+  <select class="location" name="" id="uiModel">
+    <option value="" disabled="disabled" selected="selected">Choose a Model Name</option>
+		<option>i10</option>
+        <option>Creta</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
