@@ -78,7 +78,7 @@ function onPageLoad() {
       }
   });
   
-  var url = "https://cars-prices-prediction.herokuapp.com/get_models_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "https://cars-prices-prediction.herokuapp.com/static/get_models_names"; // Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_models_names request");
