@@ -41,7 +41,7 @@ function onClickedEstimatePrice() {
   var Model = document.getElementById("uiModel");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-   var url = "http://127.0.0.1:5000/predict_car_price"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "https://cars-prices-prediction.herokuapp.com/predict_car_price"; // Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
   $.post(url, {
@@ -63,7 +63,7 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-   var url = "http://127.0.0.1:5000/get_company_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "https://cars-prices-prediction.herokuapp.com/get_company_names"; // Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_company_names request");
@@ -78,7 +78,7 @@ function onPageLoad() {
       }
   });
   
-  var url = "http://127.0.0.1:5000/get_models_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "https://cars-prices-prediction.herokuapp.com/get_models_names"; // Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_models_names request");
