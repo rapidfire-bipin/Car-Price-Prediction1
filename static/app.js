@@ -63,8 +63,8 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-   var url = "https://cars-prices-prediction.herokuapp.com/get_company_names"; // Use this if you are NOT using nginx which is first 7 tutorials
-  //var url = "/api/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+   //var url = "https://cars-prices-prediction.herokuapp.com/get_company_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "/static/get_company_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
   $.get(url,function(data, status) {
       console.log("got response for get_company_names request");
       if(data) {
