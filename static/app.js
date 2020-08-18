@@ -41,7 +41,7 @@ function onClickedEstimatePrice() {
   var Model = document.getElementById("uiModel");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-   var url = "https://cars-prices-prediction.herokuapp.com/predict_car_price"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "https://cars-prices-prediction.herokuapp.com"; // Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
   $.post(url, {
